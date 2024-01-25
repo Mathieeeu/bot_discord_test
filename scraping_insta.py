@@ -20,6 +20,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    if message.content.startswith("!test"):
+        await message.channel.send("ok")
     if message.content.startswith("!image") and len(message.content) > 9:
         #tag = input("Entrez le tag à rechercher : ")
         #tag = "landscapes"
