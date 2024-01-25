@@ -48,6 +48,5 @@ async def on_message(message):
             #print("\n")
         driver.close()
 
-#bot_token = os.environ.get("BOT_TOKEN_IMG")
-bot_token="MTE5OTk4MTg0MTQ5MTQzNTU2MQ.GMHMXV.k2Yc1ReTI4iLDIqDg6BBOrazDv8gNZsF66N3Y8"
+bot_token = os.environ.get("BOT_TOKEN_IMG")
 client.run(bot_token)
